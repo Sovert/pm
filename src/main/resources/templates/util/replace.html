@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>index</title>
+  <link rel="stylesheet" href="/layui/css/layui.css">
+</head>
+
+<body>
+
+<!-- menu -->
+<div class="nav">
+  <ul class="layui-nav" lay-filter="">
+    <li class="layui-nav-item"><a href="/plan/list">PM</a></li>
+    <li class="layui-nav-item layui-this"><a href="/util/replace">Util</a></li>
+  </ul>
+</div>
+
+<!-- content -->
+<br><br>
+<div class="layui-fluid">
+  <div class="layui-row layui-col-space8">
+    <div class="layui-col-md1">
+      <input type="text" class="layui-input" id="old_text" name="old_text">
+    </div>
+    <div class="layui-col-md1">
+      <input type="text" class="layui-input" id="new_text" name="new_text">
+    </div>
+    <div class="layui-col-md1">
+      <button class="layui-btn" id="replace" data-type="replace">替换</button>
+    </div>
+  </div>
+  <div class="layui-row layui-col-space10">
+    <div class="layui-col-md6 ">
+      <div id="input_text" contenteditable="plaintext-only" style="font-size:18px;border:1px solid #000;min-height:500px;word-wrap:break-word;word-break:break-all;">
+      </div>
+    </div>
+    <div class="layui-col-md6">
+      <div id="out_text"  style="border:1px solid #000;min-height:500px;word-wrap:break-word;word-break:break-all;">
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+<script src="/layui/layui.js"></script>
+<script src="/util/replace.js"></script>

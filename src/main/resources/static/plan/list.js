@@ -71,6 +71,14 @@
                 }
              }
          });
+
+        layui.jquery(document).on('click','#add',function(){
+                             location.href="edit"
+                     });
+
+                layui.jquery(document).on('click','#export',function(){
+                                             location.href="file"
+                                     });
   });
 
 
